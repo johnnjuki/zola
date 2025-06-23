@@ -69,7 +69,7 @@ export async function POST(req: Request) {
       throw new Error(`Model ${model} not found`)
     }
 
-    const effectiveSystemPrompt = systemPrompt || SYSTEM_PROMPT_DEFAULT
+    const effectiveSystemPrompt = systemPrompt
 
     let apiKey: string | undefined
     if (isAuthenticated && userId) {
