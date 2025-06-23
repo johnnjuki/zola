@@ -4,7 +4,7 @@ const ENCRYPTION_KEY = process.env.ENCRYPTION_KEY
 if (!ENCRYPTION_KEY) {
   throw new Error("ENCRYPTION_KEY is required")
 }
-// const ALGORITHM = "aes-256-gcm"
+const ALGORITHM = "aes-256-gcm"
 
 const key = Buffer.from(ENCRYPTION_KEY!, "base64")
 
